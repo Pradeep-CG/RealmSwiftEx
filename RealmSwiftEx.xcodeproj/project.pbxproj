@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		27588FC324B78A0E006AEF3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27588FC124B78A0E006AEF3A /* Main.storyboard */; };
 		27588FC524B78A14006AEF3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27588FC424B78A14006AEF3A /* Assets.xcassets */; };
 		27588FC824B78A14006AEF3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27588FC624B78A14006AEF3A /* LaunchScreen.storyboard */; };
+		27588FD024B79158006AEF3A /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27588FCF24B79158006AEF3A /* Notes.swift */; };
+		E31029CCF02EBCEEEB7190A5 /* Pods_RealmSwiftEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3323D439066A254B829D756B /* Pods_RealmSwiftEx.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271BC0F1534B51D726592ADA /* Pods-RealmSwiftEx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSwiftEx.release.xcconfig"; path = "Target Support Files/Pods-RealmSwiftEx/Pods-RealmSwiftEx.release.xcconfig"; sourceTree = "<group>"; };
 		27588FB824B78A0E006AEF3A /* RealmSwiftEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmSwiftEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27588FBB24B78A0E006AEF3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27588FBD24B78A0E006AEF3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		27588FC424B78A14006AEF3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27588FC724B78A14006AEF3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27588FC924B78A14006AEF3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27588FCF24B79158006AEF3A /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		3323D439066A254B829D756B /* Pods_RealmSwiftEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmSwiftEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		353F91C720225518B5687C2A /* Pods-RealmSwiftEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmSwiftEx.debug.xcconfig"; path = "Target Support Files/Pods-RealmSwiftEx/Pods-RealmSwiftEx.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E31029CCF02EBCEEEB7190A5 /* Pods_RealmSwiftEx.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				27588FBA24B78A0E006AEF3A /* RealmSwiftEx */,
 				27588FB924B78A0E006AEF3A /* Products */,
+				6C59701DBFB20CAA05BCBA86 /* Pods */,
+				DF4B3E466857527BE98A147E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +72,26 @@
 				27588FC424B78A14006AEF3A /* Assets.xcassets */,
 				27588FC624B78A14006AEF3A /* LaunchScreen.storyboard */,
 				27588FC924B78A14006AEF3A /* Info.plist */,
+				27588FCF24B79158006AEF3A /* Notes.swift */,
 			);
 			path = RealmSwiftEx;
+			sourceTree = "<group>";
+		};
+		6C59701DBFB20CAA05BCBA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				353F91C720225518B5687C2A /* Pods-RealmSwiftEx.debug.xcconfig */,
+				271BC0F1534B51D726592ADA /* Pods-RealmSwiftEx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF4B3E466857527BE98A147E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3323D439066A254B829D756B /* Pods_RealmSwiftEx.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27588FCC24B78A14006AEF3A /* Build configuration list for PBXNativeTarget "RealmSwiftEx" */;
 			buildPhases = (
+				3A7EBBB5D0E1EB6D2A887B7D /* [CP] Check Pods Manifest.lock */,
 				27588FB424B78A0E006AEF3A /* Sources */,
 				27588FB524B78A0E006AEF3A /* Frameworks */,
 				27588FB624B78A0E006AEF3A /* Resources */,
+				06199E7D48BF9C2BAEFEF859 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +162,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06199E7D48BF9C2BAEFEF859 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmSwiftEx/Pods-RealmSwiftEx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmSwiftEx/Pods-RealmSwiftEx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmSwiftEx/Pods-RealmSwiftEx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A7EBBB5D0E1EB6D2A887B7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmSwiftEx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27588FB424B78A0E006AEF3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +212,7 @@
 				27588FC024B78A0E006AEF3A /* ViewController.swift in Sources */,
 				27588FBC24B78A0E006AEF3A /* AppDelegate.swift in Sources */,
 				27588FBE24B78A0E006AEF3A /* SceneDelegate.swift in Sources */,
+				27588FD024B79158006AEF3A /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +354,7 @@
 		};
 		27588FCD24B78A14006AEF3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 353F91C720225518B5687C2A /* Pods-RealmSwiftEx.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		27588FCE24B78A14006AEF3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 271BC0F1534B51D726592ADA /* Pods-RealmSwiftEx.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
